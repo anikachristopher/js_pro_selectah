@@ -19,3 +19,582 @@ Migrating to CreatePlaylists (20200808045408)
   [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2020-08-09 20:11:55 -0400
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/anikamc/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/anikamc/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 13.6ms | Allocations: 480)
+Completed 200 OK in 61ms (Views: 26.7ms | ActiveRecord: 0.0ms | Allocations: 2633)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2020-08-09 20:11:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/songs" for 127.0.0.1 at 2020-08-09 20:12:00 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 3.7ms | ActiveRecord: 0.8ms | Allocations: 2795)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/songs" for 127.0.0.1 at 2020-08-09 20:15:44 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 0.8ms | Allocations: 2206)
+
+
+Started GET "/songs" for 127.0.0.1 at 2020-08-09 20:15:46 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 812)
+
+
+Started GET "/song" for 127.0.0.1 at 2020-08-09 20:16:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/song"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/songs" for 127.0.0.1 at 2020-08-09 20:16:37 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 824)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/songs" for 127.0.0.1 at 2020-08-09 20:21:09 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 2.5ms | ActiveRecord: 1.3ms | Allocations: 2206)
+
+
+Started GET "/songs" for 127.0.0.1 at 2020-08-09 20:21:10 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 812)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/" for 127.0.0.1 at 2020-08-09 20:26:35 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/anikamc/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/anikamc/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.5ms | Allocations: 315)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 1594)
+
+
+Started GET "/songs" for 127.0.0.1 at 2020-08-09 20:26:42 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 1.1ms | Allocations: 2287)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "playlists"[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "playlists" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "date_created" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "songs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "artist" varchar, "genre" varchar, "playlist_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE  INDEX "index_songs_on_playlist_id" ON "songs" ("playlist_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "d388664a5a7b95419b1da5d8a4e25de08f079df1"], ["created_at", "2020-08-10 00:36:37.044029"], ["updated_at", "2020-08-10 00:36:37.044029"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "playlists"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "playlists" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "date_created" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "songs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "artist" varchar, "genre" varchar, "playlist_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_songs_on_playlist_id" ON "songs" ("playlist_id")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200808045408)[0m
+  [1m[35m (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200808045158);
+
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-08-10 00:36:37.067975"], ["updated_at", "2020-08-10 00:36:37.067975"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2020-08-10 00:36:37.088331"], ["key", "environment"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "d388664a5a7b95419b1da5d8a4e25de08f079df1"], ["created_at", "2020-08-10 00:36:37.096561"], ["updated_at", "2020-08-10 00:36:37.096561"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/songs" for 127.0.0.1 at 2020-08-09 20:37:06 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 2206)
+
+
+Started GET "/songs" for 127.0.0.1 at 2020-08-09 20:37:07 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 812)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/songs" for 127.0.0.1 at 2020-08-09 20:42:18 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 0.4ms | Allocations: 2206)
+
+
+Started GET "/songs" for 127.0.0.1 at 2020-08-09 20:42:19 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 812)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/index" for 127.0.0.1 at 2020-08-09 20:46:06 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/songs" for 127.0.0.1 at 2020-08-09 20:46:58 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.4ms | Allocations: 2289)
+
+
+Started GET "/songs/1" for 127.0.0.1 at 2020-08-09 20:47:04 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.6ms | Allocations: 1268)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=1):
+  
+app/controllers/songs_controller.rb:44:in `set_song'
+Started GET "/songs" for 127.0.0.1 at 2020-08-09 20:48:11 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 814)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/songs" for 127.0.0.1 at 2020-08-09 21:01:49 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 2206)
+
+
+Started GET "/songs" for 127.0.0.1 at 2020-08-09 21:01:50 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 812)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (1.0ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "anikac"], ["artist", "anika"], ["genre", "pop"], ["created_at", "2020-08-10 01:06:42.049119"], ["updated_at", "2020-08-10 01:06:42.049119"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/songs" for 127.0.0.1 at 2020-08-09 21:06:52 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 0.7ms | Allocations: 6932)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.6ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Darling Nikki"], ["artist", "Alex Chilton"], ["genre", "Classical"], ["created_at", "2020-08-10 01:07:16.622087"], ["updated_at", "2020-08-10 01:07:16.622087"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Partyman"], ["artist", "Fats Domino"], ["genre", "Latin"], ["created_at", "2020-08-10 01:07:16.639057"], ["updated_at", "2020-08-10 01:07:16.639057"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Computer Blue"], ["artist", "The Smiths"], ["genre", "Latin"], ["created_at", "2020-08-10 01:07:16.642326"], ["updated_at", "2020-08-10 01:07:16.642326"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "I Would Die 4 U"], ["artist", "Kasabian"], ["genre", "Reggae"], ["created_at", "2020-08-10 01:07:16.645321"], ["updated_at", "2020-08-10 01:07:16.645321"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Pretzel Body Logic"], ["artist", "The Clash"], ["genre", "Non Music"], ["created_at", "2020-08-10 01:07:16.648454"], ["updated_at", "2020-08-10 01:07:16.648454"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "And God Created Woman"], ["artist", "Nigel Kennedy"], ["genre", "Reggae"], ["created_at", "2020-08-10 01:07:16.666072"], ["updated_at", "2020-08-10 01:07:16.666072"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "U Got The Look"], ["artist", "Keith Richards"], ["genre", "Blues"], ["created_at", "2020-08-10 01:07:16.680824"], ["updated_at", "2020-08-10 01:07:16.680824"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Money Don't Matter 2 Night"], ["artist", "Marilyn Manson"], ["genre", "Rap"], ["created_at", "2020-08-10 01:07:16.688464"], ["updated_at", "2020-08-10 01:07:16.688464"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Housequake"], ["artist", "Joy Division"], ["genre", "Reggae"], ["created_at", "2020-08-10 01:07:16.707201"], ["updated_at", "2020-08-10 01:07:16.707201"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "I Wanna Be Your Lover"], ["artist", "Cliff Richard (and the Shadows)"], ["genre", "Classical"], ["created_at", "2020-08-10 01:07:16.710515"], ["updated_at", "2020-08-10 01:07:16.710515"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Funk n' Roll"], ["artist", "Muse"], ["genre", "Folk"], ["created_at", "2020-08-10 01:07:16.713798"], ["updated_at", "2020-08-10 01:07:16.713798"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Another Lonely Christmas"], ["artist", "Stone Roses"], ["genre", "Rap"], ["created_at", "2020-08-10 01:07:16.717203"], ["updated_at", "2020-08-10 01:07:16.717203"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Money Don't Matter 2 Night"], ["artist", "Patti Smith"], ["genre", "World"], ["created_at", "2020-08-10 01:07:16.720552"], ["updated_at", "2020-08-10 01:07:16.720552"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nothing Compares 2 U"], ["artist", "Dizzy Gillespie"], ["genre", "Soul"], ["created_at", "2020-08-10 01:07:16.723521"], ["updated_at", "2020-08-10 01:07:16.723521"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sexy MF"], ["artist", "Eric Clapton"], ["genre", "Jazz"], ["created_at", "2020-08-10 01:07:16.726376"], ["updated_at", "2020-08-10 01:07:16.726376"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Lady Cab Driver"], ["artist", "Thelonius Monk"], ["genre", "Non Music"], ["created_at", "2020-08-10 01:07:16.729403"], ["updated_at", "2020-08-10 01:07:16.729403"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "1-800-Newfunk Ad"], ["artist", "Beck"], ["genre", "Soul"], ["created_at", "2020-08-10 01:07:16.732390"], ["updated_at", "2020-08-10 01:07:16.732390"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "I Wanna Be Your Lover"], ["artist", "Kiss"], ["genre", "Reggae"], ["created_at", "2020-08-10 01:07:16.735470"], ["updated_at", "2020-08-10 01:07:16.735470"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "How Come You Don't Call Me Anymore?"], ["artist", "Kiss"], ["genre", "Folk"], ["created_at", "2020-08-10 01:07:16.739243"], ["updated_at", "2020-08-10 01:07:16.739243"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Let's Go Crazy"], ["artist", "Rick Wright"], ["genre", "Rock"], ["created_at", "2020-08-10 01:07:16.742777"], ["updated_at", "2020-08-10 01:07:16.742777"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cloreen Baconskin"], ["artist", "Nina Simone"], ["genre", "Hip Hop"], ["created_at", "2020-08-10 01:07:16.746052"], ["updated_at", "2020-08-10 01:07:16.746052"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dead On It"], ["artist", "Nick Cave"], ["genre", "Hip Hop"], ["created_at", "2020-08-10 01:07:16.749361"], ["updated_at", "2020-08-10 01:07:16.749361"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.5ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nothing Compares 2 U"], ["artist", "Pulp"], ["genre", "Country"], ["created_at", "2020-08-10 01:07:16.754396"], ["updated_at", "2020-08-10 01:07:16.754396"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.6ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "I Feel For You"], ["artist", "O.A.R."], ["genre", "Folk"], ["created_at", "2020-08-10 01:07:16.760562"], ["updated_at", "2020-08-10 01:07:16.760562"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Computer Blue"], ["artist", "The Undertones"], ["genre", "Soul"], ["created_at", "2020-08-10 01:07:16.766236"], ["updated_at", "2020-08-10 01:07:16.766236"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.6ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Do It All Night"], ["artist", "The Mars Volta"], ["genre", "World"], ["created_at", "2020-08-10 01:07:16.772998"], ["updated_at", "2020-08-10 01:07:16.772998"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.5ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Housequake"], ["artist", "Dr Feelgood"], ["genre", "Non Music"], ["created_at", "2020-08-10 01:07:16.779567"], ["updated_at", "2020-08-10 01:07:16.779567"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.5ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Girls & Boys"], ["artist", "Tom Waits"], ["genre", "World"], ["created_at", "2020-08-10 01:07:16.786153"], ["updated_at", "2020-08-10 01:07:16.786153"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Endorphinmachine"], ["artist", "Offspring"], ["genre", "Reggae"], ["created_at", "2020-08-10 01:07:16.791484"], ["updated_at", "2020-08-10 01:07:16.791484"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "1-800-Newfunk Ad"], ["artist", "Pink Floyd"], ["genre", "Rock"], ["created_at", "2020-08-10 01:07:16.795733"], ["updated_at", "2020-08-10 01:07:16.795733"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "I Love U, but I Don't Trust U Anymore"], ["artist", "Yumi Matsutoya"], ["genre", "Rock"], ["created_at", "2020-08-10 01:07:16.799573"], ["updated_at", "2020-08-10 01:07:16.799573"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bambi"], ["artist", "Lenny Kravitz"], ["genre", "Latin"], ["created_at", "2020-08-10 01:07:16.803104"], ["updated_at", "2020-08-10 01:07:16.803104"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Partyman"], ["artist", "Kate Bush"], ["genre", "Latin"], ["created_at", "2020-08-10 01:07:16.806482"], ["updated_at", "2020-08-10 01:07:16.806482"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Thunder"], ["artist", "Pearl Jam"], ["genre", "Non Music"], ["created_at", "2020-08-10 01:07:16.809691"], ["updated_at", "2020-08-10 01:07:16.809691"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "How Come You Don't Call Me Anymore?"], ["artist", "The La's"], ["genre", "Rock"], ["created_at", "2020-08-10 01:07:16.812830"], ["updated_at", "2020-08-10 01:07:16.812830"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bambi"], ["artist", "Blinker The Star"], ["genre", "Pop"], ["created_at", "2020-08-10 01:07:16.815985"], ["updated_at", "2020-08-10 01:07:16.815985"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Alphabet St."], ["artist", "Chrissie Hynde"], ["genre", "Rock"], ["created_at", "2020-08-10 01:07:16.819219"], ["updated_at", "2020-08-10 01:07:16.819219"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "17 Days"], ["artist", "The Pretenders"], ["genre", "Electronic"], ["created_at", "2020-08-10 01:07:16.822210"], ["updated_at", "2020-08-10 01:07:16.822210"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "1-800-Newfunk Ad"], ["artist", "The Jam"], ["genre", "Folk"], ["created_at", "2020-08-10 01:07:16.825151"], ["updated_at", "2020-08-10 01:07:16.825151"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cream"], ["artist", "Led Zeppelin"], ["genre", "Folk"], ["created_at", "2020-08-10 01:07:16.828046"], ["updated_at", "2020-08-10 01:07:16.828046"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "3 Chains o' Gold"], ["artist", "The Pretenders"], ["genre", "World"], ["created_at", "2020-08-10 01:07:16.831177"], ["updated_at", "2020-08-10 01:07:16.831177"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (1.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Partyman"], ["artist", "Amy Winehouse"], ["genre", "Non Music"], ["created_at", "2020-08-10 01:07:16.834059"], ["updated_at", "2020-08-10 01:07:16.834059"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Thunder"], ["artist", "Dr Feelgood"], ["genre", "Pop"], ["created_at", "2020-08-10 01:07:16.838679"], ["updated_at", "2020-08-10 01:07:16.838679"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Delirious"], ["artist", "Frank Zappa"], ["genre", "Electronic"], ["created_at", "2020-08-10 01:07:16.841887"], ["updated_at", "2020-08-10 01:07:16.841887"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Thieves In The Temple"], ["artist", "The Cure"], ["genre", "World"], ["created_at", "2020-08-10 01:07:16.845579"], ["updated_at", "2020-08-10 01:07:16.845579"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "And God Created Woman"], ["artist", "Thelonius Monk"], ["genre", "Hip Hop"], ["created_at", "2020-08-10 01:07:16.849085"], ["updated_at", "2020-08-10 01:07:16.849085"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "She's Always In My Hair"], ["artist", "Elvis Presley"], ["genre", "Classical"], ["created_at", "2020-08-10 01:07:16.852611"], ["updated_at", "2020-08-10 01:07:16.852611"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Money Don't Matter 2 Night"], ["artist", "Rod Stewart"], ["genre", "Blues"], ["created_at", "2020-08-10 01:07:16.855794"], ["updated_at", "2020-08-10 01:07:16.855794"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Lady Cab Driver"], ["artist", "Sex Pistols"], ["genre", "World"], ["created_at", "2020-08-10 01:07:16.859518"], ["updated_at", "2020-08-10 01:07:16.859518"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "The Most Beautiful Girl In The World"], ["artist", "Björk"], ["genre", "Folk"], ["created_at", "2020-08-10 01:07:16.863420"], ["updated_at", "2020-08-10 01:07:16.863420"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Thunder"], ["artist", "Ozzy Osbourne"], ["genre", "Country"], ["created_at", "2020-08-10 01:07:16.866707"], ["updated_at", "2020-08-10 01:07:16.866707"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mountains"], ["artist", "Tom Waits"], ["genre", "Electronic"], ["created_at", "2020-08-10 01:07:16.870641"], ["updated_at", "2020-08-10 01:07:16.870641"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "When 2 R In Love"], ["artist", "Paramore"], ["genre", "World"], ["created_at", "2020-08-10 01:07:16.874018"], ["updated_at", "2020-08-10 01:07:16.874018"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "And God Created Woman"], ["artist", "Brian Wilson"], ["genre", "Soul"], ["created_at", "2020-08-10 01:07:16.877113"], ["updated_at", "2020-08-10 01:07:16.877113"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "U Got The Look"], ["artist", "Paul Weller"], ["genre", "Folk"], ["created_at", "2020-08-10 01:07:16.880593"], ["updated_at", "2020-08-10 01:07:16.880593"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.5ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Gold"], ["artist", "Elvis Costello"], ["genre", "Electronic"], ["created_at", "2020-08-10 01:07:16.885647"], ["updated_at", "2020-08-10 01:07:16.885647"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.5ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Darling Nikki"], ["artist", "Paul Weller"], ["genre", "Funk"], ["created_at", "2020-08-10 01:07:16.891844"], ["updated_at", "2020-08-10 01:07:16.891844"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dead On It"], ["artist", "Kate Bush"], ["genre", "Classical"], ["created_at", "2020-08-10 01:07:16.897608"], ["updated_at", "2020-08-10 01:07:16.897608"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Another Lonely Christmas"], ["artist", "Tina Turner"], ["genre", "Rock"], ["created_at", "2020-08-10 01:07:16.901954"], ["updated_at", "2020-08-10 01:07:16.901954"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mountains"], ["artist", "Captain Beefheart"], ["genre", "Folk"], ["created_at", "2020-08-10 01:07:16.905718"], ["updated_at", "2020-08-10 01:07:16.905718"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Endorphinmachine"], ["artist", "John Coltrane"], ["genre", "Reggae"], ["created_at", "2020-08-10 01:07:16.909634"], ["updated_at", "2020-08-10 01:07:16.909634"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Delirious"], ["artist", "Al Foster"], ["genre", "Latin"], ["created_at", "2020-08-10 01:07:16.913424"], ["updated_at", "2020-08-10 01:07:16.913424"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "319"], ["artist", "Offspring"], ["genre", "Blues"], ["created_at", "2020-08-10 01:07:16.916969"], ["updated_at", "2020-08-10 01:07:16.916969"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nothing Compares 2 U"], ["artist", "John Lydon"], ["genre", "Classical"], ["created_at", "2020-08-10 01:07:16.920488"], ["updated_at", "2020-08-10 01:07:16.920488"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "I Hate U"], ["artist", "Offspring"], ["genre", "Rap"], ["created_at", "2020-08-10 01:07:16.923735"], ["updated_at", "2020-08-10 01:07:16.923735"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "I Love U, but I Don't Trust U Anymore"], ["artist", "Kate Bush"], ["genre", "Stage And Screen"], ["created_at", "2020-08-10 01:07:16.927600"], ["updated_at", "2020-08-10 01:07:16.927600"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Little Red Corvette"], ["artist", "James Brown"], ["genre", "Jazz"], ["created_at", "2020-08-10 01:07:16.930839"], ["updated_at", "2020-08-10 01:07:16.930839"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mr. Nelson"], ["artist", "Horace Silver"], ["genre", "Hip Hop"], ["created_at", "2020-08-10 01:07:16.933921"], ["updated_at", "2020-08-10 01:07:16.933921"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tamborine"], ["artist", "Johnny Borrell"], ["genre", "Classical"], ["created_at", "2020-08-10 01:07:16.937144"], ["updated_at", "2020-08-10 01:07:16.937144"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Something in the Water (Does Not Compute)"], ["artist", "Chuck Berry"], ["genre", "Pop"], ["created_at", "2020-08-10 01:07:16.940940"], ["updated_at", "2020-08-10 01:07:16.940940"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Computer Blue"], ["artist", "The Undertones"], ["genre", "Classical"], ["created_at", "2020-08-10 01:07:16.944335"], ["updated_at", "2020-08-10 01:07:16.944335"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jam Of The Year"], ["artist", "John Lydon"], ["genre", "World"], ["created_at", "2020-08-10 01:07:16.947607"], ["updated_at", "2020-08-10 01:07:16.947607"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "When Doves Cry"], ["artist", "Roy Hargrove"], ["genre", "Reggae"], ["created_at", "2020-08-10 01:07:16.951721"], ["updated_at", "2020-08-10 01:07:16.951721"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Peach"], ["artist", "Joni Mitchell"], ["genre", "Blues"], ["created_at", "2020-08-10 01:07:16.955553"], ["updated_at", "2020-08-10 01:07:16.955553"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "A Love Bizarre"], ["artist", "Afrika Bambaataa"], ["genre", "World"], ["created_at", "2020-08-10 01:07:16.959081"], ["updated_at", "2020-08-10 01:07:16.959081"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/songs" for 127.0.0.1 at 2020-08-09 21:07:23 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 13.1ms | ActiveRecord: 0.7ms | Allocations: 18888)
+
+
