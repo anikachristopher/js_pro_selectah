@@ -598,3 +598,269 @@ Processing by SongsController#index as HTML
 Completed 200 OK in 16ms (Views: 13.1ms | ActiveRecord: 0.7ms | Allocations: 18888)
 
 
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (2.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "When You Were Mine"], ["artist", "K.D Lang"], ["genre", "Jazz"], ["created_at", "2020-08-11 00:13:04.357342"], ["updated_at", "2020-08-11 00:13:04.357342"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "The Most Beautiful Girl In The World"], ["artist", "Deepest Blue"], ["genre", "Stage And Screen"], ["created_at", "2020-08-11 00:13:04.364341"], ["updated_at", "2020-08-11 00:13:04.364341"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Guitar"], ["artist", "Keith Richards"], ["genre", "Electronic"], ["created_at", "2020-08-11 00:13:04.381733"], ["updated_at", "2020-08-11 00:13:04.381733"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Le Grind"], ["artist", "Frank Zappa"], ["genre", "Funk"], ["created_at", "2020-08-11 00:13:04.385367"], ["updated_at", "2020-08-11 00:13:04.385367"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Crimson and Clover"], ["artist", "Miles Davis"], ["genre", "Country"], ["created_at", "2020-08-11 00:13:04.389060"], ["updated_at", "2020-08-11 00:13:04.389060"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Girls & Boys"], ["artist", "Bob Dylan"], ["genre", "Funk"], ["created_at", "2020-08-11 00:13:04.397653"], ["updated_at", "2020-08-11 00:13:04.397653"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (2.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "When You Were Mine"], ["artist", "Joni Mitchell"], ["genre", "Jazz"], ["created_at", "2020-08-11 00:13:04.417963"], ["updated_at", "2020-08-11 00:13:04.417963"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Under The Cherry Moon"], ["artist", "U2"], ["genre", "Blues"], ["created_at", "2020-08-11 00:13:04.431649"], ["updated_at", "2020-08-11 00:13:04.431649"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Play In The Sunshine"], ["artist", "Flaming Lips"], ["genre", "Classical"], ["created_at", "2020-08-11 00:13:04.438486"], ["updated_at", "2020-08-11 00:13:04.438486"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "17 Days"], ["artist", "Buzzcocks"], ["genre", "Pop"], ["created_at", "2020-08-11 00:13:04.459463"], ["updated_at", "2020-08-11 00:13:04.459463"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Le Grind"], ["artist", "Ella Fitzgerald"], ["genre", "Hip Hop"], ["created_at", "2020-08-11 00:13:04.463056"], ["updated_at", "2020-08-11 00:13:04.463056"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.5ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Peach"], ["artist", "Max Roach"], ["genre", "Non Music"], ["created_at", "2020-08-11 00:13:04.466502"], ["updated_at", "2020-08-11 00:13:04.466502"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Peach"], ["artist", "Chris Isaak"], ["genre", "Rock"], ["created_at", "2020-08-11 00:13:04.470683"], ["updated_at", "2020-08-11 00:13:04.470683"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Play In The Sunshine"], ["artist", "Billy Idol"], ["genre", "World"], ["created_at", "2020-08-11 00:13:04.474650"], ["updated_at", "2020-08-11 00:13:04.474650"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "It's Gonna Be A Beautiful Night"], ["artist", "John Lydon"], ["genre", "Country"], ["created_at", "2020-08-11 00:13:04.478531"], ["updated_at", "2020-08-11 00:13:04.478531"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Scandalous!"], ["artist", "Hugh Masekela"], ["genre", "Soul"], ["created_at", "2020-08-11 00:13:04.482090"], ["updated_at", "2020-08-11 00:13:04.482090"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cloreen Baconskin"], ["artist", "White Stripes"], ["genre", "Reggae"], ["created_at", "2020-08-11 00:13:04.485668"], ["updated_at", "2020-08-11 00:13:04.485668"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Screwdriver"], ["artist", "Blondie"], ["genre", "Soul"], ["created_at", "2020-08-11 00:13:04.488868"], ["updated_at", "2020-08-11 00:13:04.488868"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "When You Were Mine"], ["artist", "Primal Scream"], ["genre", "Classical"], ["created_at", "2020-08-11 00:13:04.492074"], ["updated_at", "2020-08-11 00:13:04.492074"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Play In The Sunshine"], ["artist", "Eric Clapton"], ["genre", "Latin"], ["created_at", "2020-08-11 00:13:04.496556"], ["updated_at", "2020-08-11 00:13:04.496556"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Thunder"], ["artist", "Maroon 5"], ["genre", "Rap"], ["created_at", "2020-08-11 00:13:04.500492"], ["updated_at", "2020-08-11 00:13:04.500492"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Automatic"], ["artist", "The Cramps"], ["genre", "Electronic"], ["created_at", "2020-08-11 00:13:04.505208"], ["updated_at", "2020-08-11 00:13:04.505208"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "The Beautiful Ones"], ["artist", "Kasabian"], ["genre", "Non Music"], ["created_at", "2020-08-11 00:13:04.509149"], ["updated_at", "2020-08-11 00:13:04.509149"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Alphabet St."], ["artist", "Bruce Springsteen"], ["genre", "Classical"], ["created_at", "2020-08-11 00:13:04.512810"], ["updated_at", "2020-08-11 00:13:04.512810"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Housequake"], ["artist", "Kasabian"], ["genre", "Rap"], ["created_at", "2020-08-11 00:13:04.516725"], ["updated_at", "2020-08-11 00:13:04.516725"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Housequake"], ["artist", "Frightened Rabbit"], ["genre", "Latin"], ["created_at", "2020-08-11 00:13:04.520955"], ["updated_at", "2020-08-11 00:13:04.520955"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Under The Cherry Moon"], ["artist", "B.B. King"], ["genre", "Funk"], ["created_at", "2020-08-11 00:13:04.524476"], ["updated_at", "2020-08-11 00:13:04.524476"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "And God Created Woman"], ["artist", "The Kinks"], ["genre", "Country"], ["created_at", "2020-08-11 00:13:04.528101"], ["updated_at", "2020-08-11 00:13:04.528101"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Funk n' Roll"], ["artist", "Ed Sheeran"], ["genre", "Jazz"], ["created_at", "2020-08-11 00:13:04.531679"], ["updated_at", "2020-08-11 00:13:04.531679"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "I Wish U Heaven"], ["artist", "R.E.M."], ["genre", "Funk"], ["created_at", "2020-08-11 00:13:04.534805"], ["updated_at", "2020-08-11 00:13:04.534805"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dead On It"], ["artist", "Marc Bolan"], ["genre", "World"], ["created_at", "2020-08-11 00:13:04.538528"], ["updated_at", "2020-08-11 00:13:04.538528"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "She's Always In My Hair"], ["artist", "Cream"], ["genre", "Hip Hop"], ["created_at", "2020-08-11 00:13:04.542084"], ["updated_at", "2020-08-11 00:13:04.542084"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Baby I'm A Star"], ["artist", "Rick Wright"], ["genre", "Non Music"], ["created_at", "2020-08-11 00:13:04.545456"], ["updated_at", "2020-08-11 00:13:04.545456"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Joy In Repetition"], ["artist", "Manic Street Preachers"], ["genre", "Latin"], ["created_at", "2020-08-11 00:13:04.548530"], ["updated_at", "2020-08-11 00:13:04.548530"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Baby I'm A Star"], ["artist", "The Smiths"], ["genre", "Jazz"], ["created_at", "2020-08-11 00:13:04.551634"], ["updated_at", "2020-08-11 00:13:04.551634"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "And God Created Woman"], ["artist", "Jimi Hendrix"], ["genre", "Pop"], ["created_at", "2020-08-11 00:13:04.554521"], ["updated_at", "2020-08-11 00:13:04.554521"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "17 Days"], ["artist", "The Cranberries"], ["genre", "Rock"], ["created_at", "2020-08-11 00:13:04.557939"], ["updated_at", "2020-08-11 00:13:04.557939"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Thieves In The Temple"], ["artist", "Sonic Youth"], ["genre", "Rock"], ["created_at", "2020-08-11 00:13:04.561273"], ["updated_at", "2020-08-11 00:13:04.561273"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Baby I'm A Star"], ["artist", "Noel Gallagher"], ["genre", "Folk"], ["created_at", "2020-08-11 00:13:04.564597"], ["updated_at", "2020-08-11 00:13:04.564597"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Crimson and Clover"], ["artist", "Björk"], ["genre", "Electronic"], ["created_at", "2020-08-11 00:13:04.567979"], ["updated_at", "2020-08-11 00:13:04.567979"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Computer Blue"], ["artist", "Maroon 5"], ["genre", "Funk"], ["created_at", "2020-08-11 00:13:04.571945"], ["updated_at", "2020-08-11 00:13:04.571945"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "1000 X's & O's"], ["artist", "Jeff Beck"], ["genre", "Rap"], ["created_at", "2020-08-11 00:13:04.576472"], ["updated_at", "2020-08-11 00:13:04.576472"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Girls & Boys"], ["artist", "Maroon 5"], ["genre", "Rock"], ["created_at", "2020-08-11 00:13:04.580129"], ["updated_at", "2020-08-11 00:13:04.580129"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nothing Compares 2 U"], ["artist", "The Kinks"], ["genre", "Reggae"], ["created_at", "2020-08-11 00:13:04.583467"], ["updated_at", "2020-08-11 00:13:04.583467"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "When We're Dancing Close And Slow"], ["artist", "Paramore"], ["genre", "Rap"], ["created_at", "2020-08-11 00:13:04.586855"], ["updated_at", "2020-08-11 00:13:04.586855"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Black Sweat"], ["artist", "Roy Hargrove"], ["genre", "Non Music"], ["created_at", "2020-08-11 00:13:04.590741"], ["updated_at", "2020-08-11 00:13:04.590741"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "I Could Never Take The Place Of Your Man"], ["artist", "Sinead O'connor"], ["genre", "Classical"], ["created_at", "2020-08-11 00:13:04.594045"], ["updated_at", "2020-08-11 00:13:04.594045"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "I Could Never Take The Place Of Your Man"], ["artist", "Syd Barrett"], ["genre", "Rap"], ["created_at", "2020-08-11 00:13:04.597740"], ["updated_at", "2020-08-11 00:13:04.597740"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nothing Compares 2 U"], ["artist", "Madonna"], ["genre", "Country"], ["created_at", "2020-08-11 00:13:04.601582"], ["updated_at", "2020-08-11 00:13:04.601582"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nothing Compares 2 U"], ["artist", "Tom Jones"], ["genre", "Folk"], ["created_at", "2020-08-11 00:13:04.605187"], ["updated_at", "2020-08-11 00:13:04.605187"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Endorphinmachine"], ["artist", "Jimi Hendrix"], ["genre", "Stage And Screen"], ["created_at", "2020-08-11 00:13:04.608513"], ["updated_at", "2020-08-11 00:13:04.608513"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kiss"], ["artist", "Nina Simone"], ["genre", "Blues"], ["created_at", "2020-08-11 00:13:04.612010"], ["updated_at", "2020-08-11 00:13:04.612010"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Raspberry Beret"], ["artist", "Iggy Pop"], ["genre", "Pop"], ["created_at", "2020-08-11 00:13:04.615232"], ["updated_at", "2020-08-11 00:13:04.615232"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Take Me With U"], ["artist", "Oasis"], ["genre", "Folk"], ["created_at", "2020-08-11 00:13:04.618898"], ["updated_at", "2020-08-11 00:13:04.618898"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Alphabet St."], ["artist", "Elvis Presley"], ["genre", "Funk"], ["created_at", "2020-08-11 00:13:04.622120"], ["updated_at", "2020-08-11 00:13:04.622120"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "And God Created Woman"], ["artist", "Oasis"], ["genre", "Funk"], ["created_at", "2020-08-11 00:13:04.625604"], ["updated_at", "2020-08-11 00:13:04.625604"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Thieves In The Temple"], ["artist", "The Rolling Stones"], ["genre", "Blues"], ["created_at", "2020-08-11 00:13:04.629373"], ["updated_at", "2020-08-11 00:13:04.629373"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Crimson and Clover"], ["artist", "Pulp"], ["genre", "World"], ["created_at", "2020-08-11 00:13:04.633218"], ["updated_at", "2020-08-11 00:13:04.633218"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Little Red Corvette"], ["artist", "David Bowie"], ["genre", "Reggae"], ["created_at", "2020-08-11 00:13:04.636828"], ["updated_at", "2020-08-11 00:13:04.636828"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Peach"], ["artist", "Buzzcocks"], ["genre", "Rap"], ["created_at", "2020-08-11 00:13:04.640626"], ["updated_at", "2020-08-11 00:13:04.640626"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "I Wanna Be Your Lover"], ["artist", "Carlos Santana"], ["genre", "Reggae"], ["created_at", "2020-08-11 00:13:04.643776"], ["updated_at", "2020-08-11 00:13:04.643776"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.5ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "319"], ["artist", "The Rolling Stones"], ["genre", "Reggae"], ["created_at", "2020-08-11 00:13:04.646793"], ["updated_at", "2020-08-11 00:13:04.646793"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bambi"], ["artist", "Thin Lizzy"], ["genre", "Rap"], ["created_at", "2020-08-11 00:13:04.651054"], ["updated_at", "2020-08-11 00:13:04.651054"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Housequake"], ["artist", "Tom Robinson"], ["genre", "Soul"], ["created_at", "2020-08-11 00:13:04.654694"], ["updated_at", "2020-08-11 00:13:04.654694"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "I Wanna Be Your Lover"], ["artist", "Ed Sheeran"], ["genre", "Funk"], ["created_at", "2020-08-11 00:13:04.658269"], ["updated_at", "2020-08-11 00:13:04.658269"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Uptown"], ["artist", "Ella Fitzgerald"], ["genre", "World"], ["created_at", "2020-08-11 00:13:04.661700"], ["updated_at", "2020-08-11 00:13:04.661700"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "I Love U, but I Don't Trust U Anymore"], ["artist", "The Clash"], ["genre", "Electronic"], ["created_at", "2020-08-11 00:13:04.664964"], ["updated_at", "2020-08-11 00:13:04.664964"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kiss"], ["artist", "Manic Street Preachers"], ["genre", "Classical"], ["created_at", "2020-08-11 00:13:04.668174"], ["updated_at", "2020-08-11 00:13:04.668174"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "When Doves Cry"], ["artist", "The Yardbirds"], ["genre", "Reggae"], ["created_at", "2020-08-11 00:13:04.671115"], ["updated_at", "2020-08-11 00:13:04.671115"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "I Would Die 4 U"], ["artist", "Chris Isaak"], ["genre", "Non Music"], ["created_at", "2020-08-11 00:13:04.674430"], ["updated_at", "2020-08-11 00:13:04.674430"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "When Doves Cry"], ["artist", "U2"], ["genre", "Funk"], ["created_at", "2020-08-11 00:13:04.678003"], ["updated_at", "2020-08-11 00:13:04.678003"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Darling Nikki"], ["artist", "Tom Waits"], ["genre", "World"], ["created_at", "2020-08-11 00:13:04.681996"], ["updated_at", "2020-08-11 00:13:04.681996"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nothing Compares 2 U"], ["artist", "George Michael"], ["genre", "Jazz"], ["created_at", "2020-08-11 00:13:04.686218"], ["updated_at", "2020-08-11 00:13:04.686218"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Housequake"], ["artist", "Ella Fitzgerald"], ["genre", "Stage And Screen"], ["created_at", "2020-08-11 00:13:04.689716"], ["updated_at", "2020-08-11 00:13:04.689716"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Joy In Repetition"], ["artist", "Alex Chilton"], ["genre", "World"], ["created_at", "2020-08-11 00:13:04.693109"], ["updated_at", "2020-08-11 00:13:04.693109"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/songs" for 127.0.0.1 at 2020-08-10 20:13:24 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 22.9ms | ActiveRecord: 1.2ms | Allocations: 30848)
+
+
+Started GET "/songs" for 127.0.0.1 at 2020-08-10 20:13:26 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.8ms | Allocations: 24886)
+
+
+Started GET "/songs" for 127.0.0.1 at 2020-08-10 20:24:32 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.7ms | Allocations: 24899)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-10 20:24:35 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/anikamc/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/anikamc/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.3ms | Allocations: 315)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 1588)
+
+
+Started GET "/songs" for 127.0.0.1 at 2020-08-10 20:24:40 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.6ms | Allocations: 24869)
+
+

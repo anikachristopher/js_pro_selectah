@@ -14,8 +14,3 @@
         genre: Faker::Music.genre
     }])
 end
-
-# Song.create(name: "anikac", artist: "anika", genre: "pop")
-
-# Playlist.create(title: "car", description: "driving to work", date: 1/2/20)
-
