@@ -21,6 +21,11 @@ create - create a playlist
 read - fetch playlist index
 delete - delete a playlist
 
+read - fetch songs index
+
+
+then i would need to seed the db with playlists and not songs
+
 # 5.times do
 #     Song.create ([{
 #         name: Faker::Music::Prince.song,
