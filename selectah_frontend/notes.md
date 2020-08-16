@@ -20,3 +20,11 @@ FETCH/AJAX requests
 create - create a playlist
 read - fetch playlist index
 delete - delete a playlist
+
+# 5.times do
+#     Song.create ([{
+#         name: Faker::Music::Prince.song,
+#         artist: Faker::Music.band,
+#         genre: Faker::Music.genre
+#     }])
+# end
