@@ -1,11 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
-    fetchSongs()
+const app = new App()
 
-})
+// document.addEventListener("DOMContentLoaded", () => {
+//     fetchPlaylists()
 
-    const BASE_URL = "http://127.0.0.1:3000"
+// const BASE_URL = "http://127.0.0.1:3000/playlists"
 
-    function fetchSongs(){
-        fetch(`${BASE_URL}/songs`).then(response => response.json()).then(object => console.log(object))
+
+//     function fetchPlaylists(){
+//         fetch(`${BASE_URL}/songs`).then(response => response.json()).then(object => console.log(object))
         
-    }
+//     }
