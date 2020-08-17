@@ -25,7 +25,6 @@ five = Playlist.create(title: "Grime Time", description: "London Grime Music", d
 six = Playlist.create(title: "Rap Attack", description: "New Rap Hits", date_created: "08-15-20")
 
 
-# Song.create(name: 'Fake Love', artist: 'Duncan Mighty', genre: 'afro beat', playlist: three)
 first = Song.create(name: 'Ye', artist: 'Burna Boy', genre: 'afro beat', playlist: three)
 second = Song.create(name: 'Monsterz Out', artist: 'K Lion', genre: 'trinibad', playlist: four)
 third = Song.create(name: 'Go Crazy', artist: 'Chris Brown', genre: 'pop', playlist: two)

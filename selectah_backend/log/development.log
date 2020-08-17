@@ -1203,3 +1203,311 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 19ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 1594)
 
 
+Started GET "/songs" for ::1 at 2020-08-16 18:50:11 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 55ms (Views: 43.7ms | ActiveRecord: 1.0ms | Allocations: 7692)
+
+
+Started GET "/songs" for 127.0.0.1 at 2020-08-16 19:26:59 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.7ms | Allocations: 1628)
+
+
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (1.2ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "date_created", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ready for Reggae"], ["description", "Old School Reggae Music"], ["date_created", "0007-01-20 00:00:00"], ["created_at", "2020-08-17 01:23:03.029687"], ["updated_at", "2020-08-17 01:23:03.029687"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.3ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Pop Playground"], ["description", "All the Newest Pop Music"], ["created_at", "2020-08-17 01:23:03.036593"], ["updated_at", "2020-08-17 01:23:03.036593"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.3ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Afro Beat Party"], ["description", "Most Popluar Afro Beat Music"], ["created_at", "2020-08-17 01:23:03.040154"], ["updated_at", "2020-08-17 01:23:03.040154"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.3ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "date_created", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Trinibad"], ["description", "Trinidad Dancehall Hits"], ["date_created", "0008-01-20 00:00:00"], ["created_at", "2020-08-17 01:23:03.043536"], ["updated_at", "2020-08-17 01:23:03.043536"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.3ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "date_created", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Grime Time"], ["description", "London Grime Music"], ["date_created", "0008-10-20 00:00:00"], ["created_at", "2020-08-17 01:23:03.046632"], ["updated_at", "2020-08-17 01:23:03.046632"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.3ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Rap Attack"], ["description", "New Rap Hits"], ["created_at", "2020-08-17 01:23:03.049770"], ["updated_at", "2020-08-17 01:23:03.049770"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (1.0ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Ye"], ["artist", "Burna Boy"], ["genre", "afro beat"], ["playlist_id", 3], ["created_at", "2020-08-17 01:23:03.064818"], ["updated_at", "2020-08-17 01:23:03.064818"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Monsterz Out"], ["artist", "K Lion"], ["genre", "trinibad"], ["playlist_id", 4], ["created_at", "2020-08-17 01:23:03.074237"], ["updated_at", "2020-08-17 01:23:03.074237"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Go Crazy"], ["artist", "Chris Brown"], ["genre", "pop"], ["playlist_id", 2], ["created_at", "2020-08-17 01:23:03.078783"], ["updated_at", "2020-08-17 01:23:03.078783"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Must Be"], ["artist", "J Hus"], ["genre", "grime"], ["playlist_id", 5], ["created_at", "2020-08-17 01:23:03.082936"], ["updated_at", "2020-08-17 01:23:03.082936"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Three Little Birds"], ["artist", "Bob Marley"], ["genre", "reggae"], ["playlist_id", 1], ["created_at", "2020-08-17 01:23:03.086157"], ["updated_at", "2020-08-17 01:23:03.086157"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Highest in The Room"], ["artist", "Travis Scott"], ["genre", "rap"], ["playlist_id", 6], ["created_at", "2020-08-17 01:23:03.090127"], ["updated_at", "2020-08-17 01:23:03.090127"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "songs"[0m
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "songs"[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "playlists"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "playlists" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "date_created" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "songs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "artist" varchar, "genre" varchar, "playlist_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_songs_on_playlist_id" ON "songs" ("playlist_id")[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200808045408)[0m
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200808045158);
+
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-08-17 02:09:24.432683"], ["updated_at", "2020-08-17 02:09:24.432683"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "d388664a5a7b95419b1da5d8a4e25de08f079df1"], ["created_at", "2020-08-17 02:09:24.439726"], ["updated_at", "2020-08-17 02:09:24.439726"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "playlists"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "playlists" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "date_created" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "songs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "artist" varchar, "genre" varchar, "playlist_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_songs_on_playlist_id" ON "songs" ("playlist_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200808045408)[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200808045158);
+
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-08-17 02:09:24.458920"], ["updated_at", "2020-08-17 02:09:24.458920"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2020-08-17 02:09:24.462964"], ["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "d388664a5a7b95419b1da5d8a4e25de08f079df1"], ["created_at", "2020-08-17 02:09:24.466786"], ["updated_at", "2020-08-17 02:09:24.466786"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.4ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "date_created", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ready for Reggae"], ["description", "Old School Reggae Music"], ["date_created", "0007-01-20 00:00:00"], ["created_at", "2020-08-17 02:09:24.502903"], ["updated_at", "2020-08-17 02:09:24.502903"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.4ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Pop Playground"], ["description", "All the Newest Pop Music"], ["created_at", "2020-08-17 02:09:24.507571"], ["updated_at", "2020-08-17 02:09:24.507571"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.4ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Afro Beat Party"], ["description", "Most Popluar Afro Beat Music"], ["created_at", "2020-08-17 02:09:24.512468"], ["updated_at", "2020-08-17 02:09:24.512468"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.3ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "date_created", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Trinibad"], ["description", "Trinidad Dancehall Hits"], ["date_created", "0008-01-20 00:00:00"], ["created_at", "2020-08-17 02:09:24.516362"], ["updated_at", "2020-08-17 02:09:24.516362"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.3ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "date_created", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Grime Time"], ["description", "London Grime Music"], ["date_created", "0008-10-20 00:00:00"], ["created_at", "2020-08-17 02:09:24.520478"], ["updated_at", "2020-08-17 02:09:24.520478"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.2ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Rap Attack"], ["description", "New Rap Hits"], ["created_at", "2020-08-17 02:09:24.523844"], ["updated_at", "2020-08-17 02:09:24.523844"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Ye"], ["artist", "Burna Boy"], ["genre", "afro beat"], ["playlist_id", 3], ["created_at", "2020-08-17 02:09:24.539905"], ["updated_at", "2020-08-17 02:09:24.539905"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Monsterz Out"], ["artist", "K Lion"], ["genre", "trinibad"], ["playlist_id", 4], ["created_at", "2020-08-17 02:09:24.543238"], ["updated_at", "2020-08-17 02:09:24.543238"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Go Crazy"], ["artist", "Chris Brown"], ["genre", "pop"], ["playlist_id", 2], ["created_at", "2020-08-17 02:09:24.546252"], ["updated_at", "2020-08-17 02:09:24.546252"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Must Be"], ["artist", "J Hus"], ["genre", "grime"], ["playlist_id", 5], ["created_at", "2020-08-17 02:09:24.549237"], ["updated_at", "2020-08-17 02:09:24.549237"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Three Little Birds"], ["artist", "Bob Marley"], ["genre", "reggae"], ["playlist_id", 1], ["created_at", "2020-08-17 02:09:24.552723"], ["updated_at", "2020-08-17 02:09:24.552723"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Highest in The Room"], ["artist", "Travis Scott"], ["genre", "rap"], ["playlist_id", 6], ["created_at", "2020-08-17 02:09:24.556203"], ["updated_at", "2020-08-17 02:09:24.556203"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.4ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "date_created", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ready for Reggae"], ["description", "Old School Reggae Music"], ["date_created", "0007-01-20 00:00:00"], ["created_at", "2020-08-17 02:09:34.558400"], ["updated_at", "2020-08-17 02:09:34.558400"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.3ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Pop Playground"], ["description", "All the Newest Pop Music"], ["created_at", "2020-08-17 02:09:34.563351"], ["updated_at", "2020-08-17 02:09:34.563351"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.3ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Afro Beat Party"], ["description", "Most Popluar Afro Beat Music"], ["created_at", "2020-08-17 02:09:34.567017"], ["updated_at", "2020-08-17 02:09:34.567017"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.3ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "date_created", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Trinibad"], ["description", "Trinidad Dancehall Hits"], ["date_created", "0008-01-20 00:00:00"], ["created_at", "2020-08-17 02:09:34.570699"], ["updated_at", "2020-08-17 02:09:34.570699"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.3ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "date_created", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Grime Time"], ["description", "London Grime Music"], ["date_created", "0008-10-20 00:00:00"], ["created_at", "2020-08-17 02:09:34.574390"], ["updated_at", "2020-08-17 02:09:34.574390"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.3ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Rap Attack"], ["description", "New Rap Hits"], ["created_at", "2020-08-17 02:09:34.580700"], ["updated_at", "2020-08-17 02:09:34.580700"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.6ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Ye"], ["artist", "Burna Boy"], ["genre", "afro beat"], ["playlist_id", 9], ["created_at", "2020-08-17 02:09:34.602996"], ["updated_at", "2020-08-17 02:09:34.602996"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.6ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Monsterz Out"], ["artist", "K Lion"], ["genre", "trinibad"], ["playlist_id", 10], ["created_at", "2020-08-17 02:09:34.610357"], ["updated_at", "2020-08-17 02:09:34.610357"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Go Crazy"], ["artist", "Chris Brown"], ["genre", "pop"], ["playlist_id", 8], ["created_at", "2020-08-17 02:09:34.616676"], ["updated_at", "2020-08-17 02:09:34.616676"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Must Be"], ["artist", "J Hus"], ["genre", "grime"], ["playlist_id", 11], ["created_at", "2020-08-17 02:09:34.621594"], ["updated_at", "2020-08-17 02:09:34.621594"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Three Little Birds"], ["artist", "Bob Marley"], ["genre", "reggae"], ["playlist_id", 7], ["created_at", "2020-08-17 02:09:34.625889"], ["updated_at", "2020-08-17 02:09:34.625889"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Highest in The Room"], ["artist", "Travis Scott"], ["genre", "rap"], ["playlist_id", 12], ["created_at", "2020-08-17 02:09:34.629756"], ["updated_at", "2020-08-17 02:09:34.629756"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "songs"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "playlists"[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "playlists"[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "playlists" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "date_created" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "songs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "artist" varchar, "genre" varchar, "playlist_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_songs_on_playlist_id" ON "songs" ("playlist_id")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200808045408)[0m
+  [1m[35m (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200808045158);
+
+[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-08-17 02:15:54.280948"], ["updated_at", "2020-08-17 02:15:54.280948"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "d388664a5a7b95419b1da5d8a4e25de08f079df1"], ["created_at", "2020-08-17 02:15:54.288041"], ["updated_at", "2020-08-17 02:15:54.288041"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "playlists"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "playlists" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "date_created" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "songs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "artist" varchar, "genre" varchar, "playlist_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_songs_on_playlist_id" ON "songs" ("playlist_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200808045408)[0m
+  [1m[35m (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200808045158);
+
+[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-08-17 02:15:54.311986"], ["updated_at", "2020-08-17 02:15:54.311986"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2020-08-17 02:15:54.319988"], ["key", "environment"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "d388664a5a7b95419b1da5d8a4e25de08f079df1"], ["created_at", "2020-08-17 02:15:54.326492"], ["updated_at", "2020-08-17 02:15:54.326492"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.3ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "date_created", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ready for Reggae"], ["description", "Old School Reggae Music"], ["date_created", "0007-01-20 00:00:00"], ["created_at", "2020-08-17 02:15:54.362684"], ["updated_at", "2020-08-17 02:15:54.362684"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.5ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Pop Playground"], ["description", "All the Newest Pop Music"], ["created_at", "2020-08-17 02:15:54.368433"], ["updated_at", "2020-08-17 02:15:54.368433"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.3ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Afro Beat Party"], ["description", "Most Popluar Afro Beat Music"], ["created_at", "2020-08-17 02:15:54.373957"], ["updated_at", "2020-08-17 02:15:54.373957"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.3ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "date_created", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Trinibad"], ["description", "Trinidad Dancehall Hits"], ["date_created", "0008-01-20 00:00:00"], ["created_at", "2020-08-17 02:15:54.377927"], ["updated_at", "2020-08-17 02:15:54.377927"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.2ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "date_created", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Grime Time"], ["description", "London Grime Music"], ["date_created", "0008-10-20 00:00:00"], ["created_at", "2020-08-17 02:15:54.381382"], ["updated_at", "2020-08-17 02:15:54.381382"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlaylist Create (0.3ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Rap Attack"], ["description", "New Rap Hits"], ["created_at", "2020-08-17 02:15:54.384741"], ["updated_at", "2020-08-17 02:15:54.384741"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.6ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Ye"], ["artist", "Burna Boy"], ["genre", "afro beat"], ["playlist_id", 3], ["created_at", "2020-08-17 02:15:54.402676"], ["updated_at", "2020-08-17 02:15:54.402676"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.5ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Monsterz Out"], ["artist", "K Lion"], ["genre", "trinibad"], ["playlist_id", 4], ["created_at", "2020-08-17 02:15:54.409658"], ["updated_at", "2020-08-17 02:15:54.409658"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Go Crazy"], ["artist", "Chris Brown"], ["genre", "pop"], ["playlist_id", 2], ["created_at", "2020-08-17 02:15:54.415497"], ["updated_at", "2020-08-17 02:15:54.415497"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Must Be"], ["artist", "J Hus"], ["genre", "grime"], ["playlist_id", 5], ["created_at", "2020-08-17 02:15:54.420899"], ["updated_at", "2020-08-17 02:15:54.420899"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Three Little Birds"], ["artist", "Bob Marley"], ["genre", "reggae"], ["playlist_id", 1], ["created_at", "2020-08-17 02:15:54.424994"], ["updated_at", "2020-08-17 02:15:54.424994"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "genre", "playlist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Highest in The Room"], ["artist", "Travis Scott"], ["genre", "rap"], ["playlist_id", 6], ["created_at", "2020-08-17 02:15:54.428843"], ["updated_at", "2020-08-17 02:15:54.428843"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "songs"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "playlists"[0m
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" LIMIT ?[0m  [["LIMIT", 11]]
