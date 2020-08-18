@@ -1,5 +1,7 @@
 const app = new App()
 
+// creates a new instance of app
+
 // document.addEventListener("DOMContentLoaded", () => {
 //     fetchPlaylists()
 
