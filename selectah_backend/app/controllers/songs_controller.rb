@@ -5,12 +5,18 @@ class SongsController < ApplicationController
   def index
     @songs = Song.all
 
-    render json: @songs
+    render json: @songs, except: [:created_at, :updated_at]
   end
 
   # GET /songs/1
   def show
-    render json: @song
+    song = Song.find_by(id: params[:id])
+    if song
+      render json: { id: song.id, name: song.name, artist: song.artist genre:song.genre}
+    else
+      render json: { message: 'Song not found' }
+    end
+    # render json: @song
   end
 
   # POST /songs

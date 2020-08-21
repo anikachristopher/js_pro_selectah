@@ -1511,3 +1511,90 @@ Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.7ms | Allocations: 1628
   [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "songs"[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "playlists"[0m
   [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/songs" for ::1 at 2020-08-16 22:19:29 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 7.9ms | ActiveRecord: 0.9ms | Allocations: 7730)
+
+
+Started GET "/playlists" for ::1 at 2020-08-16 22:19:36 -0400
+Processing by PlaylistsController#index as HTML
+  [1m[36mPlaylist Load (0.5ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 9.8ms | ActiveRecord: 1.4ms | Allocations: 6858)
+
+
+Started GET "/songs" for 127.0.0.1 at 2020-08-16 22:25:10 -0400
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1771)
+
+
+Started GET "/songs" for 127.0.0.1 at 2020-08-16 22:25:29 -0400
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 1770)
+
+
+Started GET "/playlists" for 127.0.0.1 at 2020-08-16 22:47:52 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PlaylistsController#index as HTML
+  [1m[36mPlaylist Load (0.5ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.5ms | Allocations: 1826)
+
+
+Started GET "/playlists" for ::1 at 2020-08-17 23:58:02 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/anikamc/js_pro_selectah/selectah_backend/app/controllers/playlists_controller.rb:8: syntax error, unexpected tIDENTIFIER, expecting end
+... render json: @playlists except: [:created_at, :updated_at]
+...                         ^~~~~~):
+  
+app/controllers/playlists_controller.rb:8: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/playlists_controller.rb:8: syntax error, unexpected tIDENTIFIER, expecting end
+Started GET "/playlists" for ::1 at 2020-08-17 23:58:16 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/anikamc/js_pro_selectah/selectah_backend/app/controllers/playlists_controller.rb:8: syntax error, unexpected tLABEL, expecting do or '{' or '('
+... render json: playlists except: [:created_at, :updated_at]
+...                        ^~~~~~~):
+  
+app/controllers/playlists_controller.rb:8: syntax error, unexpected tLABEL, expecting do or '{' or '('
+app/controllers/playlists_controller.rb:8: syntax error, unexpected tLABEL, expecting do or '{' or '('
+Started GET "/playlists" for ::1 at 2020-08-17 23:58:28 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PlaylistsController#index as HTML
+  [1m[36mPlaylist Load (0.9ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 11.3ms | ActiveRecord: 1.5ms | Allocations: 6938)
+
+
+Started GET "/playlists" for ::1 at 2020-08-17 23:58:52 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PlaylistsController#index as HTML
+  [1m[36mPlaylist Load (0.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 0.9ms | Allocations: 6668)
+
+
+Started GET "/songs" for ::1 at 2020-08-18 00:02:53 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (1.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 8.4ms | ActiveRecord: 1.5ms | Allocations: 6714)
+
+
+Started GET "/songs" for ::1 at 2020-08-18 00:03:12 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.7ms | Allocations: 6888)
+
+

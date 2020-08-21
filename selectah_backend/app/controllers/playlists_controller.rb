@@ -5,7 +5,7 @@ class PlaylistsController < ApplicationController
   def index
     @playlists = Playlist.all
 
-    render json: @playlists
+    render json: @playlists, except: [:created_at, :updated_at]
   end
 
   # GET /playlists/1
