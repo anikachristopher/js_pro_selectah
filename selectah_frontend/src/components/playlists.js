@@ -3,7 +3,10 @@ class Playlists{
         this.playlists = []
         this.adapter = new PlaylistsAdapter()
         this.songsAdapter = new SongsAdapter()
-        this.fetchAndLoadSongs()
+        this.fetchAndLoadPlaylists()
     }
 
+    fetchAndLoadPlaylists() {
+        this.adapter.getPlaylists().then(playlists => {console.log(playlists)})
+    }
 }
