@@ -1,4 +1,6 @@
 const app = new App()
+console.log ("i'm in the index.js")
+
 
 // creates a new instance of app
 
