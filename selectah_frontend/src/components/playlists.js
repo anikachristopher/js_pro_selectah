@@ -8,17 +8,22 @@ class Playlists{
 
 
     fetchAndLoadPlaylists(){
-        this.adapter.getPlaylists().then(playlists =>{console.log(playlists)})
+        this.adapter
+        .getPlaylists()
+        .then(playlists =>{
+            playlists.forEach(playlist => this.playlists.push(playlist))
+        })
+        .then(() => {this.render()
+        })
     }
 
-    // fetchAndLoadPlaylists() {
-    //     const allplaylists = []
-    //     this.playlistsAdapter.getPlaylists()
-    //     .then(playlists => {
-    //         playlists.forEach(playlist => allplaylists.push(new Playlist(playlist.id, playlist.attributes.text, playlist.attributes.post_id)))
-    //         console.log(allplaylists)
-    //     })
+    render (){
+        const playlistsContainer = document.getElementById('playlists-container')
+        playlistsContainer.innerHTML = 'All Playlists'
+        console.log('see my playlists', this.playlists)
+    }
 
+   
 
 
     // fetchAndLoadPlaylists() {
