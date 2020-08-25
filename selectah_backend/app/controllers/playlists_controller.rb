@@ -12,7 +12,7 @@ class PlaylistsController < ApplicationController
   def show
     @playlist = Playlist.find(params[:id])
     
-    render json: @playlist
+    render json: @playlist, status: 200
   end
 
   # POST /playlists

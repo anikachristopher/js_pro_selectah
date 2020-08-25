@@ -26,6 +26,11 @@ read - fetch songs index
 
 then i would need to seed the db with playlists and not songs
 
+TTD:
+remove the date from the playlist seed and rollback the migration
+add more seed data
+
+
 # 5.times do
 #     Song.create ([{
 #         name: Faker::Music::Prince.song,
